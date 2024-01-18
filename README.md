@@ -39,7 +39,8 @@ Flask'ta benzersiz URL'ler oluşturmak için `url_for` fonksiyonunu kullanabilir
 
 
 
-`from flask import Flask, redirect, url_for
+```py
+from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
 
@@ -49,6 +50,7 @@ def yonlendir():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
+```
 
 Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde, `ana_sayfa` fonksiyonuna yönlendirme yapılır.
 
@@ -57,7 +59,8 @@ Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde, `ana_sayfa` fonksiyon
 Flask'ta URL oluşturmak için `url_for` fonksiyonunu kullanabilirsiniz. Bu, URL'leri manuel olarak oluşturmak yerine isimlendirilmiş rotalardan faydalanmanızı sağlar:
 
 
-`from flask import Flask, url_for
+```py
+from flask import Flask, url_for
 
 app = Flask(__name__)
 
@@ -73,7 +76,7 @@ if __name__ == '__main__':
     with app.test_request_context():
         print(url_for('ana_sayfa'))
         print(url_for('iletisim'))` 
-
+```
 Yukarıdaki örnekte, `url_for` fonksiyonu ile isimlendirilmiş rotalara uygun URL'leri oluşturabilirsiniz.
 
 ## HTTP Methods
