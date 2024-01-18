@@ -1,5 +1,17 @@
 # Flask ile Temel Konseptler
 
+ - Routing Variable Rules Unique URLs 
+ - Redirection Behavior URL
+ - Building HTTP Methods 
+ - Static Files 
+ - Rendering Templates 
+ - File Uploads
+ - Cookies 
+ - Redirects and Errors 
+ - APIs with JSON 
+ - Logging
+
+
 ## Routing Variable Rules
 
 Flask'ta URL'leri dinamik olarak oluşturmak ve yönetmek için değişken kuralları kullanabilirsiniz. Örneğin:
