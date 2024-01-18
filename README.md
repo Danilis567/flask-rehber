@@ -1,4 +1,4 @@
-# Flask ile Temel Konseptler
+# Flask ile Temel Konseptler / bitmedş
 
  - Routing Variable Rules Unique URLs 
  - Redirection Behavior URL
