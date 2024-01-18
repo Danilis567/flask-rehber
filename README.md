@@ -18,7 +18,8 @@ Flask'ta URL'leri dinamik olarak oluşturmak ve yönetmek için değişken kural
 
 
 
-`from flask import Flask
+```py
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -27,7 +28,8 @@ def kullanici_profili(kullanici_adi):
     return f'Kullanıcı Profili: {kullanici_adi}'
 
 if __name__ == '__main__':
-    app.run(debug=True)` 
+    app.run(debug=True)
+```
 
 Yukarıdaki örnekte, "/kullanici/username" şeklindeki URL'lere dinamik olarak yanıt verilecektir.
 
