@@ -183,7 +183,7 @@ Yukarıdaki örnekte, "/cerez-oluştur" URL'sine gidildiğinde bir çerez oluşt
 Flask ile yönlendirmeler ve hata sayfalarını yönetmek için `redirect` ve `abort` fonksiyonlarını kullanabilirsiniz:
 
 
-```
+```py
 from flask import Flask, redirect, abort
 
 app = Flask(__name__)
