@@ -83,9 +83,8 @@ Yukarıdaki örnekte, `url_for` fonksiyonu ile isimlendirilmiş rotalara uygun U
 
 Flask ile HTTP metodlarını yönetmek için `methods` parametresini kullanabilirsiniz:
 
-
-
-`from flask import Flask, request
+```py
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -95,7 +94,7 @@ def giris():
         # POST metoduyla gelen verileri işle
     else:
         # GET isteği için sayfayı göster` 
-
+```
 Yukarıdaki örnekte, "/giris" URL'sine sadece GET ve POST metodları ile erişilebilir.
 
 ## Static Files
@@ -103,8 +102,11 @@ Yukarıdaki örnekte, "/giris" URL'sine sadece GET ve POST metodları ile erişi
 Flask ile statik dosyaları (CSS, JS) sunmak için `static` klasörünü kullanabilirsiniz:
 
 
-`<!-- templates/index.html -->
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">` 
+
+```html
+<!-- templates/index.html -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+``` 
 
 Yukarıdaki örnekte, `style.css` dosyasını kullanmak için `url_for` fonksiyonu ile statik klasöründen CSS dosyasının yolu alınmıştır.
 
@@ -113,7 +115,8 @@ Yukarıdaki örnekte, `style.css` dosyasını kullanmak için `url_for` fonksiyo
 Flask'ta HTML şablonlarını kullanmak için `render_template` fonksiyonunu kullanabilirsiniz. Şablon dosyalarını `templates` klasörü içine eklemelisiniz:
 
 
-`from flask import Flask, render_template
+```py
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -123,16 +126,15 @@ def ana_sayfa():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
-
+```
 Yukarıdaki örnekte, `render_template` fonksiyonu ile `index.html` şablonu çağrılmış ve `baslik` değişkeni ile dinamik içerik eklenmiştir.
 
 ## File Uploads
 
 Flask ile dosya yükleme işlemi için `request.files` kullanılabilir:
 
-pythonCopy code
-
-`from flask import Flask, request
+```py
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -147,7 +149,7 @@ def dosya_yukle():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
-
+```
 Yukarıdaki örnekte, "/yukle" URL'sine POST metodu ile dosya yükleme işlemi gerçekleştirilmektedir.
 
 ## Cookies
@@ -155,7 +157,8 @@ Yukarıdaki örnekte, "/yukle" URL'sine POST metodu ile dosya yükleme işlemi g
 Flask ile çerezlerle çalışmak için `request.cookies` ve `make_response` fonksiyonlarını kullanabilirsiniz:
 
 
-`from flask import Flask, request, make_response
+```py
+from flask import Flask, request, make_response
 
 app = Flask(__name__)
 
@@ -172,7 +175,7 @@ def cerez_oku():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
-
+```
 Yukarıdaki örnekte, "/cerez-oluştur" URL'sine gidildiğinde bir çerez oluşturulur ve "/cerez-oku" URL'sine gidildiğinde bu çerez okunur.
 
 ## Redirects and Errors
@@ -180,7 +183,8 @@ Yukarıdaki örnekte, "/cerez-oluştur" URL'sine gidildiğinde bir çerez oluşt
 Flask ile yönlendirmeler ve hata sayfalarını yönetmek için `redirect` ve `abort` fonksiyonlarını kullanabilirsiniz:
 
 
-`from flask import Flask, redirect, abort
+```
+from flask import Flask, redirect, abort
 
 app = Flask(__name__)
 
@@ -194,7 +198,7 @@ def hata():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
-
+```
 Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde ana sayfaya yönlendirme yapılır. Ayrıca, "/hata" URL'sine gidildiğinde 404 hatası üretilir.
 
 ## APIs with JSON
@@ -202,7 +206,8 @@ Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde ana sayfaya yönlendir
 Flask ile JSON tabanlı API'ler oluşturmak için `jsonify` fonksiyonunu kullanabilirsiniz:
 
 
-`from flask import Flask, jsonify
+```py
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -213,7 +218,7 @@ def veri_al():
 
 if __name__ == '__main__':
     app.run(debug=True)` 
-
+```
 Yukarıdaki örnekte, "/api/veri" URL'sine gidildiğinde JSON formatında bir veri döndürülmektedir.
 
 ## Logging
@@ -221,7 +226,8 @@ Yukarıdaki örnekte, "/api/veri" URL'sine gidildiğinde JSON formatında bir ve
 Uygulamanızdaki olayları kaydetmek için Python'un `logging` modülünü kullanabilirsiniz:
 
 
-`import logging
+```py
+import logging
 
 app.logger.addHandler(logging.StreamHandler())
 app.logger.setLevel(logging.INFO)
@@ -230,7 +236,7 @@ app.logger.setLevel(logging.INFO)
 def log_olustur():
     app.logger.info('Bu bir bilgi mesajıdır.')
     return 'Log oluşturuldu!'` 
-
+```
 Yukarıdaki örnekte, "/log" URL'sine gidildiğinde bir bilgi logu oluşturulur.
 
 Bu başlıklar, Flask ile temel konseptleri anlamanıza yardımcı olacaktır. Daha fazla detay ve özellik için Flask Resmi Belge adresini inceleyebilirsiniz.
