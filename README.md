@@ -16,7 +16,7 @@
 
 Flask'ta URL'leri dinamik olarak oluşturmak ve yönetmek için değişken kuralları kullanabilirsiniz. Örneğin:
 
-pythonCopy code
+
 
 `from flask import Flask
 
@@ -35,7 +35,7 @@ Yukarıdaki örnekte, "/kullanici/username" şeklindeki URL'lere dinamik olarak 
 
 Flask'ta benzersiz URL'ler oluşturmak için `url_for` fonksiyonunu kullanabilirsiniz. Aynı zamanda, yönlendirmeler ile farklı URL'lere yönlendirme yapabilirsiniz:
 
-pythonCopy code
+
 
 `from flask import Flask, redirect, url_for
 
@@ -54,7 +54,6 @@ Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde, `ana_sayfa` fonksiyon
 
 Flask'ta URL oluşturmak için `url_for` fonksiyonunu kullanabilirsiniz. Bu, URL'leri manuel olarak oluşturmak yerine isimlendirilmiş rotalardan faydalanmanızı sağlar:
 
-pythonCopy code
 
 `from flask import Flask, url_for
 
@@ -79,7 +78,7 @@ Yukarıdaki örnekte, `url_for` fonksiyonu ile isimlendirilmiş rotalara uygun U
 
 Flask ile HTTP metodlarını yönetmek için `methods` parametresini kullanabilirsiniz:
 
-pythonCopy code
+
 
 `from flask import Flask, request
 
@@ -98,7 +97,6 @@ Yukarıdaki örnekte, "/giris" URL'sine sadece GET ve POST metodları ile erişi
 
 Flask ile statik dosyaları (CSS, JS) sunmak için `static` klasörünü kullanabilirsiniz:
 
-htmlCopy code
 
 `<!-- templates/index.html -->
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">` 
@@ -109,7 +107,6 @@ Yukarıdaki örnekte, `style.css` dosyasını kullanmak için `url_for` fonksiyo
 
 Flask'ta HTML şablonlarını kullanmak için `render_template` fonksiyonunu kullanabilirsiniz. Şablon dosyalarını `templates` klasörü içine eklemelisiniz:
 
-pythonCopy code
 
 `from flask import Flask, render_template
 
@@ -152,7 +149,6 @@ Yukarıdaki örnekte, "/yukle" URL'sine POST metodu ile dosya yükleme işlemi g
 
 Flask ile çerezlerle çalışmak için `request.cookies` ve `make_response` fonksiyonlarını kullanabilirsiniz:
 
-pythonCopy code
 
 `from flask import Flask, request, make_response
 
@@ -178,7 +174,6 @@ Yukarıdaki örnekte, "/cerez-oluştur" URL'sine gidildiğinde bir çerez oluşt
 
 Flask ile yönlendirmeler ve hata sayfalarını yönetmek için `redirect` ve `abort` fonksiyonlarını kullanabilirsiniz:
 
-pythonCopy code
 
 `from flask import Flask, redirect, abort
 
@@ -201,7 +196,6 @@ Yukarıdaki örnekte, "/yonlendir" URL'sine gidildiğinde ana sayfaya yönlendir
 
 Flask ile JSON tabanlı API'ler oluşturmak için `jsonify` fonksiyonunu kullanabilirsiniz:
 
-pythonCopy code
 
 `from flask import Flask, jsonify
 
@@ -221,7 +215,6 @@ Yukarıdaki örnekte, "/api/veri" URL'sine gidildiğinde JSON formatında bir ve
 
 Uygulamanızdaki olayları kaydetmek için Python'un `logging` modülünü kullanabilirsiniz:
 
-pythonCopy code
 
 `import logging
 
