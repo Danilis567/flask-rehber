@@ -50,6 +50,10 @@ Bu, hata mesajlarını daha ayrıntılı bir şekilde görmenizi sağlar.
 {% endif %}
 ```
 
-a
+Flask, HTML şablonlarını templates klasörü içinde arar. Bu nedenle, proje dizininde templates adlı bir klasör oluşturun ve içine index.html dosyasını ekleyin.
+
+```
+```
+
 
 
