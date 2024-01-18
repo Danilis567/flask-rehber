@@ -38,4 +38,18 @@ app.run(debug=True)
 ```
 Bu, hata mesajlarını daha ayrıntılı bir şekilde görmenizi sağlar.
 
+## Html template 
+
+```flask
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+```
+
+a
+
 
