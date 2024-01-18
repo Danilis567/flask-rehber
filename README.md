@@ -40,7 +40,7 @@ Bu, hata mesajlarını daha ayrıntılı bir şekilde görmenizi sağlar.
 
 ## Html template 
 
-```flask
+```html
 <!doctype html>
 <title>Hello from Flask</title>
 {% if name %}
