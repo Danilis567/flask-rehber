@@ -52,12 +52,11 @@ Bu, hata mesajlarını daha ayrıntılı bir şekilde görmenizi sağlar.
 
 Flask, HTML şablonlarını templates klasörü içinde arar. Bu nedenle, proje dizininde templates adlı bir klasör oluşturun ve içine index.html dosyasını ekleyin.
 
-```file
+```bash
 /application
     /__init__.py
     /templates
         /hello.html
-
 ```
 
 
