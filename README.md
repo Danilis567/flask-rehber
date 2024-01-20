@@ -1,15 +1,15 @@
 # Flask ile Temel Konseptler / bitmedi
 
  - [Routing Variable Rules Unique URLs](#routing-variable-rules)
- - Redirection Behavior URL
- - Building HTTP Methods 
- - Static Files 
- - Rendering Templates 
- - File Uploads
- - Cookies 
- - Redirects and Errors 
- - APIs with JSON 
- - Logging
+ - [Redirection Behavior URL](#unique-urls--redirection-behavior)
+ - [Building HTTP Methods](#http-methods) 
+ - [Static Files](#static-files)
+ - [Rendering Templates](#rendering-templates)
+ - [File Uploads](#file-uploads)
+ - [Cookies](#cookies)
+ - [Redirects and Errors](#redirects-and-errors)
+ - [APIs with JSON](#apis-with-json)
+ - [Logging](#logging)
 
 
 ## Routing Variable Rules
