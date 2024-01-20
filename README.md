@@ -1,6 +1,6 @@
 # Flask ile Temel Konseptler / bitmedi
 
- - Routing Variable Rules Unique URLs 
+ - [Routing Variable Rules Unique URLs](#routing-variable-rules)
  - Redirection Behavior URL
  - Building HTTP Methods 
  - Static Files 
